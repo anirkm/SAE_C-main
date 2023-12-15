@@ -1540,9 +1540,8 @@ void episode1()
     int attackChoice;
     Monster monster = registeredMonsters[0];
 
-    strcpy(currentLevel, "EPISODE_1");
-
     system("clear");
+    strcpy(currentLevel, "EPISODE_1");
 
     addProgressionBar(&player);
 
