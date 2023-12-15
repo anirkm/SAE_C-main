@@ -3,8 +3,8 @@
 /*
 ===============================================================================
     Lost: An Epic Journey
-    Authors: Anir Karami (C Group), Louis Prevost (C Group)
-    
+    Authors: KARAMI Anir (C Group), PREVOST Louis (C Group)
+
     File: main.c
     Description: This file contains the main logic and execution flow for the
                  entire Lost: An Epic Journey game. It orchestrates player
@@ -284,7 +284,7 @@ void addXp(Player *player, int xpToAdd)
  * @param playerClass The class of the player.
  * @return The created player.
  */
-Player createPlayer(const char *name, int healthPoints, AttackerClass playerClass)
+Player createPlayer(const char *name, AttackerClass playerClass)
 {
     Player player;
     strcpy(player.name, name);
@@ -947,7 +947,7 @@ void useHealthPotion()
             {
                 player.healthPoints = maxHealth;
             }
-            printf("\n > max HP%s\n", getText("used_hp"));
+            printf("\n > %s\n", getText("used_hp"));
         }
         else
         {
@@ -1041,6 +1041,8 @@ void initGame()
 void initBattle(Monster *monster)
 {
     int attackChoice;
+
+    resetPlayerHealth();
 
     do
     {
@@ -1146,25 +1148,27 @@ void finalEpisode()
 
     resetPlayerHealth();
 
+    strcpy(currentLevel, "CAMP_NORD");
+
     printf("\n——————————————————————————————————————————————————\n");
     printf("%s\n", getText("final_episode_1"));
-    sleep(2);
+    sleep(3);
     printf("%s\n", getText("final_episode_2"));
-    sleep(2);
+    sleep(3);
     printf("%s\n", getText("final_episode_3"));
-    sleep(2);
+    sleep(3);
     printf("%s\n", getText("final_episode_4"));
-    sleep(2);
+    sleep(3);
     printf("%s\n", getText("final_episode_5"));
-    sleep(2);
+    sleep(3);
     printf("%s\n", getText("final_episode_6"));
-    sleep(2);
+    sleep(3);
     printf("%s\n", getText("final_episode_7"));
-    sleep(2);
+    sleep(3);
     printf("%s: %s\n", getText("final_episode_8"), player.name);
-    sleep(2);
+    sleep(3);
     printf("%s\n", getText("final_episode_9"));
-    sleep(2);
+    sleep(3);
     printf("%s\n", getText("final_episode_10"));
     printf("——————————————————————————————————————————————————\n\n");
 
@@ -1181,16 +1185,29 @@ void finalEpisode()
         sleep(1);
         system("clear");
 
+        addToInventory(&player, "health_potion");
+        addToInventory(&player, "health_potion");
+        addToInventory(&player, "health_potion");
+        addToInventory(&player, "health_potion");
+
+        addToInventory(&player, "poison");
+        addToInventory(&player, "poison");
+        addToInventory(&player, "poison");
+
         finalEpisode();
     }
     else if (monster.healthPoints <= 0)
     {
         printf("\n——————————————————————————————————————————————————\n");
         printf("\n> %s\n", getText("final_chapter_1"));
+        sleep(2);
         printf("\n> %s\n", getText("final_chapter_2"));
-        printf("——————————————————————————————————————————————————\n\n");
+        sleep(2);
+        printf("\n> %s\n", getText("end"));
+        printf("\n——————————————————————————————————————————————————\n\n");
 
         sleep(5);
+        exit(EXIT_SUCCESS);
     }
 
     addProgressionBar(&player);
@@ -1242,12 +1259,12 @@ void path2()
         printf("%s\n", getText("path2_line_4"));
         printf("\n——————————————————————————————————————————————————\n");
 
-        printf("> Voulez vous ouvrir la porte?.\n");
+        printf("> %s\n", getText("open_door"));
         printf("——————————————————————————————————————————————————\n");
         printf(" 1 - %s\n", getText("oui"));
         printf(" 2 - %s\n", getText("non"));
         printf("——————————————————————————————————————————————————\n\n");
-        printf("> Votre choix: ");
+        printf("> %s", getText("which_choice"));
         if (scanf(" %d", &choice_open_chest) != 1 || (choice_open_chest != 1 && choice_open_chest != 2))
         {
             printf("\n> Invalid input. Please enter 1 or 2.\n");
@@ -1273,9 +1290,11 @@ void path2()
             printf("——————————————————————————————————————————————————\n\n");
 
             printf("> %s ", getText("input_code"));
-            scanf("%d", &code);
-            if (code != ANSWER_CODE_2)
+
+            if (scanf("%d", &code) != 1)
             {
+                while (getchar() != '\n')
+                    ;
                 printf("\n> %s.\n", getText("wrong_code"));
                 printf("  %s\n", getText("tips_shown"));
                 sleep(2);
@@ -1285,7 +1304,7 @@ void path2()
                     current_hint++;
                 }
             }
-            printf("——————————————————————————————————————————————————\n\n"); /* code */
+            printf("——————————————————————————————————————————————————\n\n");
         } while (code != ANSWER_CODE_2);
 
         addXp(&player, 1500);
@@ -1403,7 +1422,12 @@ void path1()
 
         printf("> %s ", getText("input_code"));
 
-        scanf("%d", &code);
+        if (scanf("%d", &code) != 1)
+        {
+            while (getchar() != '\n')
+                ;
+            continue;
+        }
 
         if (code != ANSWER_CODE)
         {
@@ -1522,6 +1546,11 @@ void episode1()
 
     addProgressionBar(&player);
 
+    // bonus
+
+    addToInventory(&player, "health_potion");
+    addToInventory(&player, "poison");
+
     resetPlayerHealth();
     printf("\n————————————————————— Episode 1 —————————————————————\n");
     printf("%s ", getText("episode1_intro_line1"));
@@ -1587,10 +1616,7 @@ int main()
     // Choose the player's class (Chasseur or Arcaniste) and store the information in 'attackerClass'
     AttackerClass attackerClass = chooseClass();
     // Create the player based on the entered name, default health points (100), and chosen class
-    player = createPlayer(name, 100, attackerClass);
-
-    addToInventory(&player, "health_potion");
-    addToInventory(&player, "poison");
+    player = createPlayer(name, attackerClass);
 
     // Initialize the game by registering attacks, monsters, and performing other setup
     initGame();

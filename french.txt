@@ -146,3 +146,5 @@ used_poison_spell; Vous avez utilisé le sort de poison.
 no_poison_in_inventory; Pas de poison dans votre inventaire.
 final_chapter_1;Le vaisseau mère s'éloigne dans un fracas assourdissant.
 final_chapter_2;Vous parvenez au camp au nord, où les rares survivants vous acclament pour votre exploit.
+end;Fin...
+open_door;Voulez vous ouvrir la porte ?

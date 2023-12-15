@@ -87,7 +87,7 @@ path2_line_4;You head to the base. A crashed spaceship blocks the entrance, and 
 exit_game;Are you sure you want to quit the game?
 exit_choice;Choose 1 or 2
 yes_exit_game;You have exited the game.
-no_exit_game;Excellent choice for a moment; I thought you wanted to abandon us.
+no_exit_game;Excellent choice for a moment I thought you wanted to abandon us.
 show_player_stats;Display your statistics
 path2_line_1;You return
 path2_line_2;to the intersection of the two paths.
@@ -95,7 +95,7 @@ path2_line_3;A reflection dazzles you at the top of a hill.
 path2_line_4;This is the military base indicated on your GPS.
 path2_line_5;You head to the base. A crashed spaceship blocks the entrance, and you see the door slightly ajar.
 path2_line_6;You spot a safe.
-path2_line_7;A code is required.
+path2_line_7;Congrats that's the correct code. You founs a shield and poison in the chest
 path2_line_3;This is the military base signaled on your GPS.
 path2_line_5;You spot a safe.
 path2_line_6;A code is required.
@@ -149,3 +149,6 @@ no_poison_in_inventory;No poison in your inventory.
 final_chapter_1;With a deafening noise, the mothership moves away.
 final_chapter_2;You reach the camp to the north, where the few survivors congratulate you on your feat.
 end;End...
+oui;Yes
+non;No
+open_door;Do you want to open the door?
