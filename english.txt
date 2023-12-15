@@ -1,0 +1,151 @@
+intro_chunk1;You emerge in a mysterious world, surrounded by enigmatic ruins. Total amnesia envelops your mind, but on your left arm, a screen displays an ID and a name. With a determined gesture, you press the only button present, and the screen lights up, revealing a crucial choice: become a Hunter or an Arcanist.
+intro_chunk2;In this captivating reality, each class is equipped with a specific weapon, and you are called to face terrifying monsters while making decisions that will shape the destiny of your adventure. Are you ready to dive into the unknown, reveal your buried identity, and face the challenges that await you with bravery and determination?
+language_prompt;Choose the language (1 for French, 2 for English):
+language_invalid;Invalid input. Please enter 1 for French or 2 for English.
+name_intro;Choose a name worthy of a legendary hero:
+memory_allocation_error;Memory allocation error.
+name_entry_error;Error entering the name.
+class_prompt;Choose a class to unleash your epic powers:
+chasseur_description;Hunter (c): Close combat (Health boost) (100 health points in total)
+arcaniste_description;Arcanist (a): Ranged combat (Attack boost) (80 health points in total)
+class_choice;Your choice (c/a):
+chasseur_name;Hunter
+arcaniste_name;Arcanist
+class_invalid;Invalid choice. Please choose between Hunter (c) and Arcanist (a).
+welcome_screen;Welcome! Let the battle begin!
+attack_successful;Successful attack!
+remaining_health_points;Remaining health points:
+missed_attack;Your attack has failed. You dealt no damage.
+class_chasseur_message;You are now a Hunter. You receive a health potion and a special weapon: Hunter's Bow.
+chasseur_weapon;Hunter's Bow
+class_arcaniste_message;You are now an Arcanist. You receive a health potion and a special weapon: Arcanist's Scepter.
+arcaniste_weapon;Arcanist's Scepter
+episode2_intro_line1;The GPS indicates two paths; which one do you want to follow?
+episode2_intro_line2;Be cautious, your choices can influence the difficulty of the journey.
+choice_path1;Choose path 1
+choice_path2;Choose path 2
+path1;You have chosen path 1
+path2;You have chosen path 2
+coming_soon;Coming soon...
+death_message;You are dead! You restart the mission.
+monster_kill;You have killed the monster!
+get_health_potion;You have gained a health potion.
+use_attack;Use one of your 3 attacks to kill this monster.
+simple_attack;Simple attack
+critical_attack;Critical attack
+ultimate_attack;Ultimate attack
+intro_path1_line1;You decide to take path A and walk enough time to recover from your injuries.
+intro_path1_line2;Several hours pass, and a second monster enters the building where you were resting.
+intro_path1_line3;This one is fast and attacks you even before you are standing, but you decide to face it.
+path1_p2_line1;You approach the northern camp and see a destroyed laboratory.
+path1_p2_line2;She asks you for a 4-digit code.
+path1_p2_line3;You conduct your research in the laboratory and find a post-it "13" on a desk next to the crate.
+path1_p2_line4;Inside, a green crate stands in the center of the entrance.
+monster_hp;Monster's health points
+player_hp;Your health points
+episode1_intro_line1;A shrill scream echoes, and a creature moving on dozens of entirely black tentacles emerges from the shadows.
+episode1_intro_line2;It doesn't move... It observes you.
+episode1_intro_line3;You decide to use your new attacks.
+attack_failed;Player's attack failed.
+poison_effect;You have poison in your inventory, and it has been used to increase your damage.
+monster_attack;The monster attacks you, and you lose.
+next_round;Preparing for the next round...
+attack_success;Successful attack, and the monster loses.
+next_mission;Congratulations, you have killed the monster. Now, you continue your path.
+coming_soon;Game still in development, coming soon!
+battle_stats;------------------------- Battle Statistics -------------------------
+which_attack;Which attack do you choose?
+chasseur_weapon_1;Simple attack (-10 HP | 100% success)
+chasseur_weapon_2;Critical attack (-15 HP | 60% success)
+chasseur_weapon_3;Ultimate attack (-30 HP | 20% success)
+arcaniste_weapon_1;Simple attack (-12 HP | 100% success)
+arcaniste_weapon_2;Critical attack (-18 HP | 60% success)
+arcaniste_weapon_3;Ultimate attack (-35 HP | 20% success)
+extra_damage;additional damage due to poison in your inventory)
+use_hp;Use your health potion (+20 HP)
+use_poison;Throw the poison potion (-10 HP)
+used_hp;You have used your health potion
+no_hp;No health potion
+attack_choice_invalid;Invalid attack choice
+invalid_choice; Your choice is invalid.
+input_code;Enter the code:
+path1_code_hint1;Think about how a processor processes numbers.
+path1_code_hint2;The code you are looking for has 4 digits; it corresponds to 2 to the power of 2.
+path1_code_hint3;In this code, you will find three 1s and a 0; this has a direct relationship with the number 13.
+yes;Yes
+no;No
+path2_code_hint1;The sum of the two digits of the number is 9.
+path2_code_hint2;The tens digit is double the units digit.
+path2_code_hint3;The difference between the tens digit and the units digit is equal to 3.
+show_player_stats;Show your statistics
+manage_inventory;Manage your inventory
+exit_game;Exit the game
+path2_line_1;You return to the intersection of the two paths.
+path2_line_2;A reflection dazzles you at the top of a hill.
+path2_line_3;This is the military base indicated on your GPS.
+path2_line_4;You head to the base. A crashed spaceship blocks the entrance, and you see the door slightly ajar.
+exit_game;Are you sure you want to quit the game?
+exit_choice;Choose 1 or 2
+yes_exit_game;You have exited the game.
+no_exit_game;Excellent choice for a moment; I thought you wanted to abandon us.
+show_player_stats;Display your statistics
+path2_line_1;You return
+path2_line_2;to the intersection of the two paths.
+path2_line_3;A reflection dazzles you at the top of a hill.
+path2_line_4;This is the military base indicated on your GPS.
+path2_line_5;You head to the base. A crashed spaceship blocks the entrance, and you see the door slightly ajar.
+path2_line_6;You spot a safe.
+path2_line_7;A code is required.
+path2_line_3;This is the military base signaled on your GPS.
+path2_line_5;You spot a safe.
+path2_line_6;A code is required.
+exit_game;Are you sure you want to exit the game?
+poison_success;You threw a poison potion on the monster and lost 10 HP.
+player_stats;Your statistics
+player_name;Your name
+player_level;Your level
+player_health;Your health points
+player_exp;Your experience points
+player_health_potion;Number of health potions in your possession
+player_poison;Number of poisons in your possession
+player_shield;Number of shields in your possession
+progression;Your progression in the game
+map_legend_player;Your position
+map_legend_hills;Impassable mountain
+map_legend_interestpoint;Point of interest
+map_legend_path;Map legend
+clc;Click Enter to continue
+show_inventory_items;Show your inventory items
+generic_choice_prompt;What option do you choose?
+your_hp_points;Your HP points
+monster_hp_points;Monster's HP points
+show_map;Display your position on the map
+final_episode_1;You resumed the journey to the north zone.
+final_episode_2;You find yourself in a deserted valley at the bottom of which you see the smoke from the camp.
+final_episode_3;Above you is the mothership.
+final_episode_4;A shrill cry echoes, and a beam of light descends from the ship to the ground.
+final_episode_5;A monster descends slowly and lands a few meters away from you.
+final_episode_6;This one is larger than the others and speaks to you in an unknown language...
+final_episode_7;Your device reacts: the earth has finally chosen its champion
+final_episode_8;You are the only one who has managed to survive
+final_episode_9;Without even realizing it, a first attack hits you.
+final_episode_10;You stand up and prepare to fight.
+hint;Hint
+path2_line_7;You open the safe and find a shield and a poison.
+path2_line_8;You take both items.
+path2_line_9;You exit the military base.
+wrong_code;You entered the wrong answer.
+tips_shown;Hints have been provided to help you.
+correct_answer;Congratulations, you found the correct answer.
+new_poison_in_inventory;A poison has been added to your inventory.
+which_path;Which path do you choose?
+which_choice;Choose your option from the above.
+ctc;Click Enter to return to the menu;
+map_legend;Legend
+max_hp;You cannot use a health potion as your health points are already at maximum.
+inventory_items;Your inventory items
+used_poison_spell;You have used the poison spell.
+no_poison_in_inventory;No poison in your inventory.
+final_chapter_1;With a deafening noise, the mothership moves away.
+final_chapter_2;You reach the camp to the north, where the few survivors congratulate you on your feat.
+end;End...

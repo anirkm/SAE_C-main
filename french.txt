@@ -1,0 +1,148 @@
+intro_chunk1;Vous émergez dans un monde mystérieux, entouré de ruines énigmatiques. Une amnésie totale enveloppe votre esprit, mais sur votre bras gauche, un écran affiche un matricule et un nom. D'un geste déterminé, vous appuyez sur le seul bouton présent, et l'écran s'illumine, révélant un choix crucial : devenir Chasseur ou Arcaniste.
+intro_chunk2;Dans cette réalité captivante, chaque classe est dotée d'une arme spécifique, et vous êtes appelé à affronter des monstres terrifiants, tout en prenant des décisions qui forgeront le destin de votre aventure. Êtes-vous prêt à plonger au cœur de l'inconnu, à révéler votre identité enfouie, et à affronter les défis qui vous attendent avec bravoure et détermination ?
+language_prompt;Choisissez la langue (1 pour le français, 2 pour l'anglais) :
+language_invalid;Entrée non valide. Veuillez entrer 1 pour le français ou 2 pour l'anglais.
+name_intro;Choisissez un nom digne d'un héros légendaire :
+memory_allocation_error;Erreur d'allocation mémoire.
+name_entry_error;Erreur lors de la saisie du nom.
+class_prompt;Choisissez une classe pour libérer vos pouvoirs épiques :
+chasseur_description;Chasseur (c) : Combat rapproché (Boost de vie) (100 points de vie au total)
+arcaniste_description;Arcaniste (a) : Combat à distance (Boost d'attaque) (80 points de vie au total)
+class_choice;Votre choix (c/a) :
+chasseur_name;Chasseur
+arcaniste_name;Arcaniste
+class_invalid;Choix non valide. Veuillez choisir entre Chasseur (c) et Arcaniste (a).
+welcome_screen;Bienvenue ! Que le combat commence !
+attack_successful;Attaque réussie !
+remaining_health_points;Points de vie restants :
+missed_attack;Votre attaque a échoué. Vous n'avez infligé aucun dégât.
+class_chasseur_message;Vous êtes maintenant un Chasseur. Vous recevez une potion de santé et une arme spéciale : Arc de Chasseur.
+chasseur_weapon;Arc de Chasseur
+class_arcaniste_message;Vous êtes maintenant un Arcaniste. Vous recevez une potion de santé et une arme spéciale : Sceptre d'Arcaniste.
+arcaniste_weapon;Sceptre d'Arcaniste
+episode2_intro_line1;Le GPS vous indique deux chemins ; lequel souhaitez-vous suivre ?
+episode2_intro_line2;Attention, vos choix peuvent influencer la difficulté du parcours.
+choice_path1;Choisir le chemin 1
+choice_path2;Choisir le chemin 2
+path1;Vous avez choisi le chemin 1
+path2;Vous avez choisi le chemin 2
+coming_soon;Bientôt disponible...
+death_message;Vous êtes mort ! Vous recommencez la mission
+monster_kill;Vous avez tué le monstre !
+get_health_potion;Vous avez gagné une potion de santé.
+use_attack;Utiliser l'une de vos 3 attaques pour tuer ce monstre.
+simple_attack;Attaque simple
+critical_attack;Attaque critique
+ultimate_attack;Attaque ultime
+intro_path1_line1;Vous décidez d'emprunter le chemin A et marchez suffisamment de temps pour récupérer de vos blessures.
+intro_path1_line2;Plusieurs heures s'écoulent et un second monstre entre dans l’immeuble dans lequel vous vous reposiez.
+intro_path1_line3;Celui-ci est rapide et vous attaque avant même que vous ne soyez debout, mais vous décidez de l'affronter.
+path1_p2_line1;Vous vous rapprochez du camp nord et apercevez un laboratoire détruit.
+path1_p2_line2;Elle vous demande un code à 4 chiffres.
+path1_p2_line3;Vous menez vos recherches dans le laboratoire et trouvez un post'it “13” sur un bureau à côté de la caisse.
+path1_p2_line4;À l'intérieur une caisse verte trône au centre de l’entrée.
+monster_hp;Points de vie du monstre
+player_hp;Vos points de vie
+episode1_intro_line1;Un hurlement strident retentit et une créature se déplaçant sur des dizaines de tentacules entièrement noirs sort de l’ombre.
+episode1_intro_line2;Elle ne bouge pas... Elle vous observe.
+episode1_intro_line3;Vous décidez d'utiliser vos nouvelles attaques.
+attack_failed;Attaque du joueur échouée
+poison_effect;Vous avez un poison dans votre inventaire et cela a été utilisé pour augmenter vos dégâts.
+monster_attack;Le monstre vous attaque et vous perdez.
+next_round;Préparation du prochain round...
+attack_success;Attaque réussie et le monstre perd.
+next_mission;Félicitations, vous avez tué le monstre. Maintenant, vous continuez votre chemin.
+comming_soon;Jeu encore en développement, bientôt disponible !
+battle_stats;————————————————————— Statistiques de combat —————————————————————
+which_attack;Quelle attaque choisissez-vous ?
+chasseur_weapon_1;Attaque simple (-10 PV | 100% de réussite)
+chasseur_weapon_2;Attaque critique (-15 PV | 60% de réussite)
+chasseur_weapon_3;Attaque ultime (-30 PV | 20% de réussite)
+arcaniste_weapon_1;Attaque simple (-12 PV | 100% de réussite)
+arcaniste_weapon_2;Attaque critique (-18 PV | 60% de réussite)
+arcaniste_weapon_3;Attaque ultime (-35 PV | 20% de réussite)
+extra_damage;supplémentaires grâce au poison dans votre inventaire)
+use_hp;Utiliser votre potion de santé (+20 PV)
+use_poison;Jetez la potion de poison (-10 PV)
+used_hp;Vous avez utilisé votre potion de santé
+no_hp;Pas de potion de santé
+attack_choice_invalid;Choix d'attaque invalide
+invalid_choice; Votre choix est invalide.
+input_code;Saisir le code :
+path1_code_hint1;Pensez à la manière dont un processeur traite les nombres.
+path1_code_hint2;Le code que vous cherchez comporte 4 chiffres, cela correspond à 2 puissance 2.
+path1_code_hint3;Dans ce code, vous trouverez trois 1 et un 0, cela a une relation directe avec le nombre 13.
+oui;Oui
+non;Non
+path2_code_hint1;La somme des deux chiffres du nombre est 9.
+path2_code_hint2;Le chiffre des dizaines est le double du chiffre des unités.
+path2_code_hint3;La différence entre le chiffre des dizaines et le chiffre des unités est égale à 3.
+show_player_stats;Montrer vos statistiques
+manage_inventory;Gerer votre inventaire
+exit_game;Quitter le jeu
+path2_line_1;Vous revenez à l'intersection des deux chemins.
+path2_line_2;Un reflet vous éblouit en haut d'une colline.
+path2_line_3;Il s’agit de la base militaire signalez sur votre GPS.
+path2_line_4;Vous vous dirigez vers la base. Un vaisseau écrasé bloque l’entrée et aperçoit la porte entrouverte.
+exit_game;Vous etes sur de vouloir quitter le je
+exit_choice:Choisissez 1 ou 2
+yes_exit_game;Vous avez quitter le jeu
+no_exit_game;Exellenet choix pour un momenet jai cru que tu voulais nous abandonez
+show_player_stats;Afficher vos statistiques
+manage_inventory;Gérer votre inventaire
+path2_line_3;Il s’agit de la base militaire signalée sur votre GPS.
+path2_line_4;Vous vous dirigez vers la base. Un vaisseau écrasé bloque l’entrée et vous apercevez une porte entrouverte.
+path2_line_5;Vous apercevez un coffre-fort.
+path2_line_6;Un code vous est demandé.
+exit_game;Êtes-vous sûr de vouloir quitter le jeu?
+exit_choice;Choisissez 1 ou 2
+yes_exit_game;Vous avez quitté le jeu.
+no_exit_game;Excellent choix pour un moment; j'ai cru que tu voulais nous abandonner.
+poison_success;Vous avez jeté une potion de poison sur le monstre et perdu 10 HP.
+player_stats;Vos statistiques
+player_name;Votre nom
+player_level;Votre niveau
+player_health;Vos points de vie
+player_exp;Vos points d'expérience
+player_health_potion;Nombre de potions de vie en votre possession
+player_poison;Nombre de poisons en votre possession
+player_shield;Nombre de boucliers en votre possession
+progression;Votre progression dans le jeu
+map_legend_player;Votre position
+map_legend_hills;Montagne infranchissable
+map_legend_interestpoint;Point d'intérêt
+map_legend_path;Légende de carte
+clc;Cliquez sur Entrée pour continuer
+show_inventory_items;Afficher les objets de votre inventaire
+generic_choice_prompt;Quelle option choisissez-vous
+your_hp_points;Vos points HP
+monster_hp_points;Points HP du monstre
+show_map;Afficher votre position sur la carte
+final_episode_1;Vous avez repris la route vers la zone nord.
+final_episode_2;Vous vous trouvez dans une vallée déserte au fond de laquelle vous apercevez les fumées du camp.
+final_episode_3;Au-dessus de vous se trouve le vaisseau mère.
+final_episode_4;Un cri strident retentit et un faisceau lumineux descend du vaisseau jusqu’au sol.
+final_episode_5;Un monstre en descend lentement et vient se poser à terre, à quelques mètres de vous.
+final_episode_6;Celui-ci est plus grand que les autres et vous parle dans une langue inconnue…
+final_episode_7;Votre dispositif réagit: la terre a finalement choisi son champion
+final_episode_8;Vous êtes le seul à avoir réussi à survivre
+final_episode_9;Sans même que vous vous en aperceviez, une première attaque vous atteint.
+final_episode_10;Vous vous relevez et vous vous préparez à combattre.
+hint;Indice
+path2_line_7;Vous ouvrez le coffre et vous trouvez un bouclier et un poison.
+path2_line_8;Vous prenez les deux objets.
+path2_line_9;Vous sortez de la base militaire.
+wrong_code;Vous avez saisi la mauvaise réponse.
+tips_shown;Des indices ont été mis à votre disposition pour vous aider.
+correct_answer;Félicitations, vous avez trouvé la bonne réponse.
+new_poison_in_inventory;Un poison a été ajouté à votre inventaire.
+which_path;Quel chemin choisissez-vous?
+which_choice;Choisissez votre option parmi celles ci-dessus.
+ctc;Cliquer sur entrer pour revenir au menu;
+map_legend;Legende
+max_hp;Vous ne pouvez pas utiliser une potion de vie car vos points de vie sont déjà au maximum.
+inventory_items; Vos objets d'inventaire
+used_poison_spell; Vous avez utilisé le sort de poison.
+no_poison_in_inventory; Pas de poison dans votre inventaire.
+final_chapter_1;Le vaisseau mère s'éloigne dans un fracas assourdissant.
+final_chapter_2;Vous parvenez au camp au nord, où les rares survivants vous acclament pour votre exploit.
